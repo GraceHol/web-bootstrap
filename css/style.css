@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
     --primary: #ffa7c9;
-    --light: rgb(255, 237, 243);
+    --light: #FFEDF3FF;
     --dark: #D31949;
     --dark-1: #03d8de;
 }
@@ -105,7 +105,7 @@
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free" !important;
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
@@ -113,13 +113,15 @@
 
 .navbar-light {
     background-color: var(--light);
+    font-family: 'Nunito', sans-serif !important;
+
 }
 
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 18px;
     text-transform: uppercase;
     outline: none;
 }
@@ -159,7 +161,7 @@
 }
 
 .dropdown-menu {
-    background: #ffa7c9;
+    background: var(--light);
     font-weight: 500;
 
 }
@@ -171,6 +173,7 @@
         opacity: 0;
         visibility: hidden;
         transition: .5s;
+        font-size: 18px;
     }
 
     .navbar .dropdown-menu.fade-down {
@@ -221,6 +224,9 @@
         right:0;
         width:100%;
         margin-top:0;
+        border-color: var(--light);
+        text-align: left;
+        text-indent: 5em;
     }
 
 }
@@ -287,6 +293,11 @@
 
 
 /*** Section Title ***/
+.bg-title-navbar {
+    background-color: #FFEDF3FF;
+
+}
+
 .section-title {
     position: relative;
     display: inline-block;
